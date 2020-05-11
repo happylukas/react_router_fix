@@ -120,7 +120,7 @@ function Dashboard(props) {
                 handleDrawerClose={handleDrawerClose}
             />
             <Switch>
-                <Route exact path="/root/one" component={Overview} />
+                <Route path="/root/one" component={Overview} />
             </Switch>
             {/* <Overview /> */}
             
