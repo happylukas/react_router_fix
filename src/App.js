@@ -14,8 +14,9 @@ import Dashboard from './components/dashboard';
 function App() {
 	return (
         <Switch>
-            <Route path='/root' render={Dashboard} />
-            <Route exact path='/' render={() => "HOME"} />
+            <Route path='/root' component={Dashboard} />
+            <Route exact path='/' component={() => "HOME"} />
+            <Route path='/accounts/signin' component={SignIn} />
         </Switch>
 	);
 }
